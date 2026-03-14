@@ -9,14 +9,38 @@ redirect_from:
 
 <section class="academic-home">
   <div class="academic-home__hero">
-    <p class="academic-home__eyebrow">Researcher / Academic Profile</p>
-    <h1 class="academic-home__title">Enzhao Zhu</h1>
-    <p class="academic-home__lead">
-      Enzhao Zhu works on remote sensing and geospatial machine learning, with a focus on weakly supervised learning,
-      land-cover classification, wetland monitoring, and surface-water dynamics in arid environments. His recent work
-      combines multi-source satellite imagery with representation learning and transfer learning to study ecological
-      processes and vegetation patterns in wetlands and drylands.
-    </p>
+    <div class="academic-home__hero-copy">
+      <p class="academic-home__eyebrow">Researcher / Academic Profile</p>
+      <h1 class="academic-home__title">Enzhao Zhu</h1>
+      <p class="academic-home__lead">
+        Enzhao Zhu works on remote sensing and geospatial machine learning, with a focus on weakly supervised learning,
+        land-cover classification, wetland monitoring, and surface-water dynamics in arid environments. His recent work
+        combines multi-source satellite imagery with representation learning and transfer learning to study ecological
+        processes and vegetation patterns in wetlands and drylands.
+      </p>
+      <div class="academic-home__cta-row">
+        <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Browse Publications</a>
+        <a class="btn btn--inverse" href="{{ '/cv/' | relative_url }}">View CV</a>
+      </div>
+    </div>
+    <div class="academic-home__hero-facts">
+      <div class="academic-home__fact">
+        <span class="academic-home__fact-value">4</span>
+        <span class="academic-home__fact-label">Publications</span>
+      </div>
+      <div class="academic-home__fact">
+        <span class="academic-home__fact-value">4</span>
+        <span class="academic-home__fact-label">Research Projects</span>
+      </div>
+      <div class="academic-home__fact">
+        <span class="academic-home__fact-value">6</span>
+        <span class="academic-home__fact-label">Conferences</span>
+      </div>
+      <div class="academic-home__fact">
+        <span class="academic-home__fact-value">GIS + AI</span>
+        <span class="academic-home__fact-label">Core Focus</span>
+      </div>
+    </div>
   </div>
 
   <div class="academic-home__grid">
@@ -27,6 +51,20 @@ redirect_from:
         <li>Weakly supervised learning, positive-unlabeled learning, and domain adaptation for image classification.</li>
         <li>Geospatial AI using Jilin-1, Sentinel-2, hyperspectral imagery, and long-term Earth observation archives.</li>
       </ul>
+    </section>
+
+    <section class="academic-home__section academic-home__section--accent">
+      <h2>Research Snapshot</h2>
+      <p>
+        My research centers on how Earth observation data and learning-based methods can be combined to improve
+        environmental monitoring in data-scarce and ecologically sensitive regions. I am especially interested in
+        classification settings where labels are limited, noisy, or weak, and in building methods that remain useful
+        across sensors, locations, and time periods.
+      </p>
+      <p>
+        Application domains include arid wetlands, alpine grasslands, invasive plant detection, and long-term
+        hydrological change analysis in Central Asia and northwestern China.
+      </p>
     </section>
 
     <section class="academic-home__section">
@@ -58,6 +96,28 @@ redirect_from:
     </section>
 
     <section class="academic-home__section">
+      <h2>Current Project Themes</h2>
+      <div class="academic-home__cards">
+        <article class="academic-home__mini-card">
+          <h3>Wetland Vegetation Classification</h3>
+          <p>Weakly supervised learning for vegetation cover mapping in arid wetlands.</p>
+        </article>
+        <article class="academic-home__mini-card">
+          <h3>Surface Water Dynamics</h3>
+          <p>Long-term extraction and climatic analysis of monthly water-area variation in the Irtysh River Basin.</p>
+        </article>
+        <article class="academic-home__mini-card">
+          <h3>Invasive Plant Detection</h3>
+          <p>Positive-unlabeled learning for mapping <em>Pedicularis kansuensis</em> in alpine wetland and grassland systems.</p>
+        </article>
+        <article class="academic-home__mini-card">
+          <h3>Transfer Learning for RS</h3>
+          <p>Domain adaptation and discriminative feature augmentation for robust remote-sensing classification.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="academic-home__section">
       <h2>Selected Publications</h2>
       <p class="academic-home__note">Selected articles on remote sensing, wetland monitoring, and geospatial machine learning.</p>
       <div class="academic-home__publications">
@@ -70,6 +130,35 @@ redirect_from:
         {% endfor %}
       </div>
       <p><a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">View all publications</a></p>
+    </section>
+
+    <section class="academic-home__section">
+      <h2>Methods and Tools</h2>
+      <ul class="academic-home__tag-list">
+        <li>Remote Sensing</li>
+        <li>Deep Learning</li>
+        <li>Weakly Supervised Learning</li>
+        <li>Positive-Unlabeled Learning</li>
+        <li>Domain Adaptation</li>
+        <li>Jilin-1</li>
+        <li>Sentinel-2</li>
+        <li>Hyperspectral Imaging</li>
+        <li>ArcGIS</li>
+        <li>ENVI</li>
+        <li>MATLAB</li>
+        <li>Python</li>
+        <li>Google Earth Engine</li>
+      </ul>
+    </section>
+
+    <section class="academic-home__section">
+      <h2>Conference Participation</h2>
+      <ul class="academic-home__timeline">
+        <li><strong>China Forum on Wetland Remote Sensing</strong><br>2024</li>
+        <li><strong>The Ninth National Symposium on Digital Mountain</strong><br>2024</li>
+        <li><strong>China Wetland Forum</strong><br>2024</li>
+        <li><strong>The First National Conference on Information Geography</strong><br>2023</li>
+      </ul>
     </section>
   </div>
 </section>

@@ -23,7 +23,7 @@ repository               : "1804071544/1804071544.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo.jpg"
   name             : "Enzhao Zhu"
   pronouns         : # example: "she/her"  
   bio              : "Researcher in remote sensing and geospatial AI, with interests in weakly supervised learning, arid ecosystems, wetland monitoring, and land-cover classification."

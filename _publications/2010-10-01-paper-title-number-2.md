@@ -1,14 +1,14 @@
 ---
-title: "Paper Title Number 2"
+title: "Sample Conference Paper"
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'Replace this sample conference paper with your own work and summarize the core result in one sentence.'
 date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+venue: '[Conference Name]'
+slidesurl: 'https://1804071544.github.io/files/sample-slides.pdf'
+paperurl: 'https://1804071544.github.io/files/sample-paper.pdf'
+citation: 'Your Name. (2010). &quot;Sample Conference Paper.&quot; <i>[Conference Name]</i>.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Add an abstract, short description, links, or supplementary material for this publication here.

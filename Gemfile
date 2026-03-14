@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+# 这行是新加的，专门为 Windows 系统提供时区数据
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 group :jekyll_plugins do
   gem 'jekyll'

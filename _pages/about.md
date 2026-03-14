@@ -9,19 +9,28 @@ redirect_from:
 
 <section class="academic-home">
   <div class="academic-home__hero">
-    <div class="academic-home__hero-copy">
-      <p class="academic-home__eyebrow">Researcher / Academic Profile</p>
-      <h1 class="academic-home__title">Enzhao Zhu</h1>
-      <p class="academic-home__lead">
-        Enzhao Zhu works on remote sensing and geospatial machine learning, with a focus on weakly supervised learning,
-        land-cover classification, wetland monitoring, and surface-water dynamics in arid environments. His recent work
-        combines multi-source satellite imagery with representation learning and transfer learning to study ecological
-        processes and vegetation patterns in wetlands and drylands.
-      </p>
-      <div class="academic-home__cta-row">
-        <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Browse Publications</a>
-        <a class="btn btn--inverse" href="{{ '/cv/' | relative_url }}">View CV</a>
-      </div>
+    <p class="academic-home__eyebrow">Researcher / Academic Profile</p>
+    <h1 class="academic-home__title">Enzhao Zhu</h1>
+    <div class="academic-home__intro-meta">
+      <p><strong>Current Position:</strong> Ph.D. student, University of Pavia</p>
+      <p><strong>Supervisor:</strong> Prof. Paolo Gamba</p>
+      <p><strong>Email:</strong> <a href="mailto:zhuenzhao22@mails.ucas.ac.cn">zhuenzhao22@mails.ucas.ac.cn</a></p>
+    </div>
+    <p class="academic-home__lead">
+      I am currently a Ph.D. student at the University of Pavia, working with Prof. Paolo Gamba.
+      Previously, I completed my M.Sc. in Cartography and Geographic Information System at the University of Chinese
+      Academy of Sciences and my B.Sc. in Marine Technology (GIS) at Ocean University of China.
+    </p>
+    <p class="academic-home__lead">
+      The primary focus of my research is remote sensing and geospatial machine learning for land-cover classification,
+      wetland monitoring, and surface-water analysis in arid environments. My goal is to explore effective approaches
+      that reduce dependence on large-scale manual annotation when addressing challenging Earth observation tasks.
+      Therefore, I am particularly interested in unsupervised domain adaptation, semi-supervised and weakly supervised
+      learning, positive-unlabeled learning, and robust classification across sensors and regions.
+    </p>
+    <div class="academic-home__cta-row">
+      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Browse Publications</a>
+      <a class="btn btn--inverse" href="{{ '/cv/' | relative_url }}">View CV</a>
     </div>
     <div class="academic-home__hero-facts">
       <div class="academic-home__fact">
@@ -43,7 +52,7 @@ redirect_from:
     </div>
   </div>
 
-  <div class="academic-home__grid">
+  <div class="academic-home__stack">
     <section class="academic-home__section">
       <h2>Research Interests</h2>
       <ul class="academic-home__list">

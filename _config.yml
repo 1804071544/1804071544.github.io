@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Enzhao Zhu"
 title_separator          : "-"
 name                     : &name "Enzhao Zhu"
-description              : &description "Personal academic website featuring research overview, publications, and curriculum vitae."
+description              : &description "Academic website of Enzhao Zhu, featuring research in remote sensing, deep learning, arid ecosystems, and weakly supervised learning."
 url                      : https://1804071544.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,19 +26,19 @@ author:
   avatar           : "profile.png"
   name             : "Enzhao Zhu"
   pronouns         : # example: "she/her"  
-  bio              : "Assistant Professor / Researcher. Replace this short bio with two concise sentences on your research agenda, methods, and current focus."
-  location         : "City, Country"
-  employer         : "Department of [Discipline], [University]"
+  bio              : "Researcher in remote sensing and geospatial AI, with interests in weakly supervised learning, arid ecosystems, wetland monitoring, and land-cover classification."
+  location         : "Urumqi, Xinjiang, China"
+  employer         : "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands"
   uri              : "https://1804071544.github.io"
-  email            : "your.email@institution.edu" 
+  email            : "zhuenzhao22@mails.ucas.ac.cn" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # URL
+  googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=hcPHjSUAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # URL
+  orcid            : "https://orcid.org/my-orcid?orcid=0009-0006-4014-289X"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL

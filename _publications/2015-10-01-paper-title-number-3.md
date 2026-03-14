@@ -1,14 +1,13 @@
 ---
-title: "Sample Early-Career Publication"
+title: "Unsupervised Domain Adaptation with Contrastive Learning-Based Discriminative Feature Augmentation for RS Image Classification"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'Use this sample entry as a placeholder until you import your real bibliography.'
-date: 2015-10-01
-venue: '[Venue Name]'
-slidesurl: 'https://1804071544.github.io/files/sample-slides.pdf'
-paperurl: 'https://1804071544.github.io/files/sample-paper.pdf'
-citation: 'Your Name. (2015). &quot;Sample Early-Career Publication.&quot; <i>[Venue Name]</i>.'
+permalink: /publication/domain-adaptation-discriminative-feature-augmentation
+excerpt: 'Remote Sensing article on unsupervised domain adaptation and contrastive learning for remote-sensing image classification.'
+date: 2024-01-01
+venue: 'Remote Sensing'
+paperurl: ''
+citation: 'Xu, R., Samat, A., Zhu, E., Li, E., & Li, W. (2024). &quot;Unsupervised Domain Adaptation with Contrastive Learning-Based Discriminative Feature Augmentation for RS Image Classification.&quot; <i>Remote Sensing</i>, 16(11), 1974.'
 ---
 
-Add an abstract, short description, links, or supplementary material for this publication here.
+Published in *Remote Sensing* (2024), this work studies unsupervised domain adaptation for remote-sensing image classification with contrastive learning-based feature augmentation.

@@ -12,8 +12,10 @@ redirect_from:
     <p class="academic-home__eyebrow">Researcher / Academic Profile</p>
     <h1 class="academic-home__title">Enzhao Zhu</h1>
     <p class="academic-home__lead">
-      Replace this introduction with a concise overview of your research area, the problems you study, and the methods you use.
-      A strong first version is usually 3-4 sentences covering your current appointment, core topics, and recent work.
+      Enzhao Zhu works on remote sensing and geospatial machine learning, with a focus on weakly supervised learning,
+      land-cover classification, wetland monitoring, and surface-water dynamics in arid environments. His recent work
+      combines multi-source satellite imagery with representation learning and transfer learning to study ecological
+      processes and vegetation patterns in wetlands and drylands.
     </p>
   </div>
 
@@ -21,9 +23,9 @@ redirect_from:
     <section class="academic-home__section">
       <h2>Research Interests</h2>
       <ul class="academic-home__list">
-        <li>[Research Area 1] with a one-line description of the central question.</li>
-        <li>[Research Area 2] with a short note on methods, datasets, or systems.</li>
-        <li>[Research Area 3] with a short note on application domain or impact.</li>
+        <li>Remote sensing for wetland, grassland, and surface-water monitoring in arid regions.</li>
+        <li>Weakly supervised learning, positive-unlabeled learning, and domain adaptation for image classification.</li>
+        <li>Geospatial AI using Jilin-1, Sentinel-2, hyperspectral imagery, and long-term Earth observation archives.</li>
       </ul>
     </section>
 
@@ -31,16 +33,12 @@ redirect_from:
       <h2>Education</h2>
       <ul class="academic-home__timeline">
         <li>
-          <strong>Ph.D., [Discipline]</strong><br>
-          [University], [Year or Expected Year]
+          <strong>M.Sc. in Cartography and Geographic Information System</strong><br>
+          University of Chinese Academy of Sciences, 2022-2025
         </li>
         <li>
-          <strong>M.S., [Discipline]</strong><br>
-          [University], [Year]
-        </li>
-        <li>
-          <strong>B.S., [Discipline]</strong><br>
-          [University], [Year]
+          <strong>B.Sc. in Marine Technology (GIS)</strong><br>
+          Ocean University of China, 2018-2022
         </li>
       </ul>
     </section>
@@ -49,21 +47,19 @@ redirect_from:
       <h2>Appointments</h2>
       <ul class="academic-home__timeline">
         <li>
-          <strong>[Current Position]</strong><br>
-          [Department], [Institution], [Start Year]-Present
+          <strong>Graduate Researcher</strong><br>
+          State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, 2022-2025
         </li>
         <li>
-          <strong>[Previous Position]</strong><br>
-          [Institution], [Years]
+          <strong>M.Sc. Research Student</strong><br>
+          University of Chinese Academy of Sciences, 2022-2025
         </li>
       </ul>
     </section>
 
     <section class="academic-home__section">
       <h2>Selected Publications</h2>
-      <p class="academic-home__note">
-        Update the records in <code>_publications/</code> to replace these sample entries with your own papers.
-      </p>
+      <p class="academic-home__note">Selected articles on remote sensing, wetland monitoring, and geospatial machine learning.</p>
       <div class="academic-home__publications">
         {% for post in site.publications reversed limit:4 %}
           <article class="academic-home__publication">

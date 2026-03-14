@@ -1,14 +1,13 @@
 ---
-title: "Sample Conference Paper"
+title: "Incremental Learning and Localized Pseudo-Labeling for Classifying Lakeshore Wetland-Cropland Mosaics: A ZH-1 Hyperspectral Case Study of Bosten Lake, China"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'Replace this sample conference paper with your own work and summarize the core result in one sentence.'
-date: 2010-10-01
-venue: '[Conference Name]'
-slidesurl: 'https://1804071544.github.io/files/sample-slides.pdf'
-paperurl: 'https://1804071544.github.io/files/sample-paper.pdf'
-citation: 'Your Name. (2010). &quot;Sample Conference Paper.&quot; <i>[Conference Name]</i>.'
+permalink: /publication/incremental-learning-bosten-lake
+excerpt: 'Under-review manuscript on incremental learning and localized pseudo-labeling for classifying lakeshore wetland-cropland mosaics from ZH-1 hyperspectral imagery.'
+date: 2025-01-01
+venue: 'Under review'
+paperurl: ''
+citation: 'Zhu, E., Samat, A., Li, E., Xu, R., Li, W., & Li, W. (2025). &quot;Incremental Learning and Localized Pseudo-Labeling for Classifying Lakeshore Wetland-Cropland Mosaics: A ZH-1 Hyperspectral Case Study of Bosten Lake, China.&quot; Under review.'
 ---
 
-Add an abstract, short description, links, or supplementary material for this publication here.
+Manuscript currently under review.

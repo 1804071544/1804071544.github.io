@@ -1,13 +1,13 @@
 ---
-title: "Sample Forthcoming Paper"
+title: "Intra- and Inter-annual Spatiotemporal Variations and Climatic Driving Factors of Surface Water Area in the Irtysh River Basin During 1985-2022"
 collection: publications
-category: conferences
-permalink: /publication/2025-06-08-paper-title-number-5
-excerpt: 'Replace this forthcoming paper placeholder with your most recent accepted or in-progress work.'
+category: manuscripts
+permalink: /publication/irtysh-river-basin-surface-water-variations
+excerpt: 'Remote Sensing Applications: Society and Environment article on long-term surface-water dynamics and climatic drivers in the Irtysh River Basin.'
 date: 2025-06-08
-venue: '[Venue Name]'
-paperurl: 'https://1804071544.github.io/files/sample-paper.pdf'
-citation: 'Your Name. (2025). &quot;Sample Forthcoming Paper.&quot; <i>[Venue Name]</i>.'
+venue: 'Remote Sensing Applications: Society and Environment'
+paperurl: ''
+citation: 'Zhu, E., Samat, A., Li, W., Xu, R., Xia, J., Qiu, Y., & Abuduwaili, J. (2025). &quot;Intra- and Inter-annual Spatiotemporal Variations and Climatic Driving Factors of Surface Water Area in the Irtysh River Basin During 1985-2022.&quot; <i>Remote Sensing Applications: Society and Environment</i>, 101455.'
 ---
 
-Add an abstract, short description, links, or supplementary material for this publication here.
+Published in *Remote Sensing Applications: Society and Environment* (2025), this paper analyzes long-term surface-water variation and climatic drivers in the Irtysh River Basin.

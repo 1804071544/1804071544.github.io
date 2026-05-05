@@ -9,7 +9,7 @@ redirect_from:
 
 <section class="academic-home">
   <div class="academic-home__hero">
-    <p class="academic-home__eyebrow">Researcher / Academic Profile</p>
+    <p class="academic-home__eyebrow">Remote Sensing / Geospatial AI</p>
     <h1 class="academic-home__title">Enzhao Zhu</h1>
     <div class="academic-home__intro-meta">
       <p><strong>Current Position:</strong> Ph.D. student, University of Pavia</p>
@@ -34,8 +34,8 @@ redirect_from:
     </div>
     <div class="academic-home__hero-facts">
       <div class="academic-home__fact">
-        <span class="academic-home__fact-value">4</span>
-        <span class="academic-home__fact-label">Publications</span>
+        <span class="academic-home__fact-value">3</span>
+        <span class="academic-home__fact-label">First-author articles</span>
       </div>
       <div class="academic-home__fact">
         <span class="academic-home__fact-value">4</span>
@@ -127,13 +127,17 @@ redirect_from:
     </section>
 
     <section class="academic-home__section">
-      <h2>Selected Publications</h2>
-      <p class="academic-home__note">Selected articles on remote sensing, wetland monitoring, and geospatial machine learning.</p>
+      <h2>First-Author Publications</h2>
+      <p class="academic-home__note">Articles selected from my Google Scholar profile where I am listed as the first author.</p>
       <div class="academic-home__publications">
-        {% for post in site.publications reversed limit:4 %}
+        {% for post in site.publications reversed %}
           <article class="academic-home__publication">
+            <p class="academic-home__publication-meta">
+              <span>{{ post.venue }}</span>
+              {% if post.date %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
+              {% if post.doi %}<a href="https://doi.org/{{ post.doi }}">DOI</a>{% endif %}
+            </p>
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p>{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
             {% if post.excerpt %}<p>{{ post.excerpt | markdownify | strip_html | strip }}</p>{% endif %}
           </article>
         {% endfor %}

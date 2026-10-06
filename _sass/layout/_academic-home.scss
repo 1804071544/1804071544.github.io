@@ -393,6 +393,101 @@ html[data-theme="dark"] .ah-btn--primary {
   .pub-item__links { display: none; }
 }
 
+/* CV
+   ========================================================================== */
+
+.resume {
+  max-width: 52rem;
+  color: var(--ah-text);
+}
+
+.resume-section {
+  margin: 0 0 2.4rem;
+
+  > p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.page__content .resume-section__title,
+.resume-section__title {
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ah-line);
+  color: var(--ah-ink);
+  font-size: 1.35rem;
+}
+
+.resume-entry {
+  margin: 0 0 1.2rem;
+
+  &:last-child { margin-bottom: 0; }
+
+  p,
+  ul {
+    margin: 0.2rem 0 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  ul { padding-left: 1.1rem; }
+
+  li { margin: 0; }
+}
+
+.resume-entry__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+
+  h3 {
+    margin: 0;
+    color: var(--ah-ink);
+    font-family: var(--ah-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+}
+
+.resume-entry__date {
+  flex-shrink: 0;
+  color: var(--ah-accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.page__content .resume-entry__org,
+.resume-entry__org {
+  color: var(--ah-muted);
+}
+
+.resume-skills {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.92rem;
+
+  dt {
+    margin: 0;
+    color: var(--ah-ink);
+    font-weight: 600;
+  }
+
+  dd { margin: 0; }
+}
+
+@media (max-width: 640px) {
+  .resume-entry__head { flex-direction: column; gap: 0.1rem; }
+  .resume-skills { grid-template-columns: 1fr; gap: 0 1rem; }
+  .resume-skills dd { margin-bottom: 0.5rem; }
+}
+
 /* Sidebar
    ========================================================================== */
 

@@ -34,16 +34,16 @@ redirect_from:
     </div>
     <div class="academic-home__hero-facts">
       <div class="academic-home__fact">
-        <span class="academic-home__fact-value">3</span>
+        <span class="academic-home__fact-value">{{ site.publications | where: "first_author", true | size }}</span>
         <span class="academic-home__fact-label">First-author articles</span>
+      </div>
+      <div class="academic-home__fact">
+        <span class="academic-home__fact-value">{{ site.publications | size }}</span>
+        <span class="academic-home__fact-label">Journal articles</span>
       </div>
       <div class="academic-home__fact">
         <span class="academic-home__fact-value">4</span>
         <span class="academic-home__fact-label">Research Projects</span>
-      </div>
-      <div class="academic-home__fact">
-        <span class="academic-home__fact-value">6</span>
-        <span class="academic-home__fact-label">Conferences</span>
       </div>
       <div class="academic-home__fact">
         <span class="academic-home__fact-value">GIS + AI</span>
@@ -130,7 +130,8 @@ redirect_from:
       <h2>First-Author Publications</h2>
       <p class="academic-home__note">Articles selected from my Google Scholar profile where I am listed as the first author.</p>
       <div class="academic-home__publications">
-        {% for post in site.publications reversed %}
+        {% assign first_author_pubs = site.publications | where: "first_author", true %}
+        {% for post in first_author_pubs reversed %}
           <article class="academic-home__publication">
             <p class="academic-home__publication-meta">
               <span>{{ post.venue }}</span>
@@ -161,16 +162,6 @@ redirect_from:
         <li>MATLAB</li>
         <li>Python</li>
         <li>Google Earth Engine</li>
-      </ul>
-    </section>
-
-    <section class="academic-home__section">
-      <h2>Conference Participation</h2>
-      <ul class="academic-home__timeline">
-        <li><strong>China Forum on Wetland Remote Sensing</strong><br>2024</li>
-        <li><strong>The Ninth National Symposium on Digital Mountain</strong><br>2024</li>
-        <li><strong>China Wetland Forum</strong><br>2024</li>
-        <li><strong>The First National Conference on Information Geography</strong><br>2023</li>
       </ul>
     </section>
   </div>

@@ -34,20 +34,11 @@ Research Projects
 * Research and Application of Weakly Supervised Learning Methods for Remote Sensing-Based Vegetation Cover Classification in Arid Regions, 01/2023-12/2026
   * Led field investigations of arid-zone wetlands and developed vegetation classification algorithms.
 
-Selected Publications
+Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
-Conferences
-======
-* The First National Conference on Information Geography, 2023
-* International Forum on Sustainable Development of Ecology and Environment in the Silk Road Economic Belt, 2023
-* International Young Scientists Forum on Ecology and Resource Sustainable Development of Silk Road, 2023
-* China Wetland Forum, 2024
-* The Ninth National Symposium on Digital Mountain, 2024
-* China Forum on Wetland Remote Sensing, 2024
 
 Skills
 ======

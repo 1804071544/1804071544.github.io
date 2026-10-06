@@ -1,0 +1,30 @@
+{% comment %}
+  One publication entry. The title links to the publisher page (paperurl),
+  falling back to the DOI. Authors are taken from the citation string.
+{% endcomment %}
+{% assign pub = include.pub %}
+{% if pub.paperurl %}
+  {% assign pub_href = pub.paperurl %}
+{% elsif pub.doi %}
+  {% assign pub_href = pub.doi | prepend: "https://doi.org/" %}
+{% endif %}
+{% assign pub_authors = pub.citation | split: " (" | first | replace: "Zhu, E.", "<strong>Zhu, E.</strong>" %}
+<article class="pub-item">
+  <div class="pub-item__year">{{ pub.date | date: "%Y" }}</div>
+  <div class="pub-item__body">
+    <h3 class="pub-item__title">
+      {% if pub_href %}<a href="{{ pub_href }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+    </h3>
+    {% if pub_authors %}<p class="pub-item__authors">{{ pub_authors }}</p>{% endif %}
+    <p class="pub-item__venue">
+      <em>{{ pub.venue }}</em>
+      {% if pub.first_author %}<span class="pub-item__badge">First author</span>{% endif %}
+      {% assign journal = site.data.journals[pub.venue] %}
+      {% if journal.impact_factor %}<span class="pub-item__badge pub-item__badge--if" title="Journal Impact Factor (JCR 2025)">IF {{ journal.impact_factor }}</span>{% endif %}
+    </p>
+    <p class="pub-item__links">
+      {% if pub_href %}<a href="{{ pub_href }}" target="_blank" rel="noopener"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> Paper</a>{% endif %}
+      {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener"><i class="fas fa-fw fa-link" aria-hidden="true"></i> DOI: {{ pub.doi }}</a>{% endif %}
+    </p>
+  </div>
+</article>

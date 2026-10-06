@@ -1,0 +1,21 @@
+# Journal Impact Factors (Clarivate JCR 2025), keyed by the `venue` field of each publication.
+# Values taken from each journal's official website in October 2026; update yearly after the JCR release.
+
+"IEEE Geoscience and Remote Sensing Magazine":
+  impact_factor: 13.7
+"npj Climate and Atmospheric Science":
+  impact_factor: 9.6
+"Urban Forestry & Urban Greening":
+  impact_factor: 8.2
+"Journal of Geovisualization and Spatial Analysis":
+  impact_factor: 6.8
+"Climate Risk Management":
+  impact_factor: 5.5
+"Remote Sensing Applications: Society and Environment":
+  impact_factor: 4.9
+"Plants":
+  impact_factor: 4.7
+"Remote Sensing":
+  impact_factor: 4.3
+"Land":
+  impact_factor: 3.5

@@ -5,36 +5,28 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="publication-intro">
-    <p class="publication-intro__eyebrow">From Google Scholar</p>
-    <h2>Journal articles</h2>
-    <p>This page lists my journal articles, grouped into first-author and co-authored work. You can also find the complete profile on <a href="{{site.author.googlescholar}}">Google Scholar</a>.</p>
-  </div>
-{% endif %}
+<div class="publication-intro">
+  <p class="publication-intro__eyebrow">Journal Articles</p>
+  <p class="publication-intro__summary">
+    <span><strong>{{ site.publications | size }}</strong> articles</span>
+    <span><strong>{{ site.publications | where: "first_author", true | size }}</strong> as first author</span>
+  </p>
+  {% if site.author.googlescholar %}
+    <p>Grouped into first-author and co-authored work. The full, up-to-date list is on
+      <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  {% endif %}
+</div>
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+{% for category in site.publication_category %}
+  {% assign pubs = site.publications | where: "category", category[0] | reverse %}
+  {% if pubs.size > 0 %}
+    <section class="pub-group">
+      <h2 class="pub-group__title">{{ category[1].title }} <span>{{ pubs.size }}</span></h2>
+      <div class="pub-list">
+        {% for post in pubs %}
+          {% include publication-item.html pub=post %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

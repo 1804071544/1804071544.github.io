@@ -30,7 +30,7 @@ author:
   location         : "Urumqi, Xinjiang, China"
   employer         : "University of Pavia"
   uri              : "https://1804071544.github.io"
-  email            : "zhuenzhao22@mails.ucas.ac.cn" 
+  email            : "enzhao.zhu01@universitadipavia.it" 
 
   # Academic websites
   academia         : # URL
@@ -217,7 +217,7 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 

@@ -36,9 +36,11 @@ Research Projects
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<div class="pub-list pub-list--compact">
+{% for post in site.publications reversed %}
+  {% include publication-item.html pub=post %}
+{% endfor %}
+</div>
 
 Skills
 ======

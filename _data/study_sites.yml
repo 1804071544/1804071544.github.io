@@ -1,0 +1,71 @@
+# Study sites and places of study shown on the homepage map.
+# `papers` lists publication permalinks (see _publications/*.md).
+# Coordinates are representative points, not study-area boundaries.
+# `color` is the marker colour on the map and the swatch in the site list.
+
+sites:
+  - name: "Bayinbuluke Alpine Wetland"
+    color: "#f0a63a"
+    region: "Xinjiang, China"
+    lat: 42.88
+    lon: 84.22
+    topic: "Invasive plant detection and wetland vegetation mapping"
+    papers:
+      - /publication/monitoring-pedicularis-kansuensis-planetscope
+      - /publication/invasive-plant-detection-positive-unlabeled-learning
+      - /publication/self-supervised-alpine-wetland-vegetation-mapping
+  - name: "Bosten Lake"
+    color: "#4fd1e0"
+    region: "Xinjiang, China"
+    lat: 41.98
+    lon: 86.95
+    topic: "Wetland–cropland mosaic classification"
+    papers:
+      - /publication/bosten-lake-wetland-cropland-classification
+  - name: "Irtysh River Basin"
+    color: "#7aa2ff"
+    region: "China · Kazakhstan · Russia"
+    lat: 48.0
+    lon: 84.5
+    topic: "Monthly surface-water dynamics, 1985–2022"
+    papers:
+      - /publication/irtysh-river-basin-surface-water-variations
+  - name: "Urumqi"
+    color: "#f472b6"
+    region: "Xinjiang, China"
+    lat: 43.83
+    lon: 87.62
+    topic: "Urban greening and surface urban heat island"
+    papers:
+      - /publication/fragile-greening-urban-cooling-dryland
+  - name: "Kazakhstan"
+    color: "#a3e635"
+    region: "Central Asia"
+    lat: 48.0
+    lon: 67.5
+    topic: "Flood dynamics and driver attribution, 2000–2024"
+    papers:
+      - /publication/kazakhstan-floods-shap-remote-sensing
+
+# Places of study, in chronological order; the map joins them with a dashed path.
+institutions:
+  - name: "Ocean University of China"
+    region: "Qingdao, China"
+    lat: 36.16
+    lon: 120.49
+    degree: "B.Sc."
+    field: "Marine Technology (GIS)"
+    years: "2018–2022"
+  - name: "University of Chinese Academy of Sciences"
+    region: "Urumqi, China"
+    lat: 43.86
+    lon: 87.57
+    degree: "M.Sc."
+    field: "Cartography and Geographic Information System"
+    years: "2022–2025"
+  - name: "University of Pavia"
+    region: "Pavia, Italy"
+    lat: 45.186
+    lon: 9.155
+    degree: "Ph.D."
+    years: "Current"

@@ -1,0 +1,70 @@
+{% comment %}
+  Study-site map on Esri World Imagery. Sites come from _data/study_sites.yml;
+  linked papers are resolved from the publications collection by permalink.
+{% endcomment %}
+{% assign geo = site.data.study_sites %}
+
+<section class="geo" aria-labelledby="geo-title">
+  <div class="site-container">
+    <div class="section-head section-head--light">
+      <h2 id="geo-title" class="section-head__title">Study Areas</h2>
+      <p class="section-head__lead">
+        Select a site to see the related papers.
+      </p>
+    </div>
+
+    <div class="geo__grid">
+      <div class="geo__map-wrap">
+        <div id="study-map" class="geo__map" role="region" aria-label="Map of study sites"></div>
+        <div class="geo__readout" aria-hidden="true"><span id="geo-coords">—</span></div>
+        <div class="geo__panel">
+          <button type="button" class="geo__reset">Overview</button>
+          <ul class="geo__sites">
+            {% for s in geo.sites %}
+              <li><button type="button" class="geo__site" data-site="{{ forloop.index0 }}" style="--c: {{ s.color | default: '#f0a63a' }}"><span class="geo__site-swatch" aria-hidden="true"></span>{{ s.name }}</button></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <ol class="geo__list">
+        {% for s in geo.sites %}
+          <li>
+            <button type="button" class="geo__card" data-site="{{ forloop.index0 }}" style="--c: {{ s.color | default: '#f0a63a' }}">
+              <span class="geo__card-swatch" aria-hidden="true"></span>
+              <span class="geo__card-body">
+                <span class="geo__card-name">{{ s.name }}</span>
+                <span class="geo__card-topic">{{ s.topic }}</span>
+                <span class="geo__card-coords">{{ s.lat }}°N · {{ s.lon }}°E</span>
+              </span>
+            </button>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <p class="geo__credit">Imagery &copy; Esri, Maxar, Earthstar Geographics. Markers show representative locations, not study-area boundaries.</p>
+  </div>
+</section>
+
+<script>
+  window.STUDY_SITES = [
+    {% for s in geo.sites %}
+    {
+      name: {{ s.name | jsonify }},
+      region: {{ s.region | jsonify }},
+      color: {{ s.color | default: "#f0a63a" | jsonify }},
+      topic: {{ s.topic | jsonify }},
+      lat: {{ s.lat }}, lon: {{ s.lon }},
+      papers: [
+        {% for p in s.papers %}
+          {% assign pub = site.publications | where: "permalink", p | first %}
+          {% if pub %}{ title: {{ pub.title | jsonify }}, url: {{ pub.paperurl | jsonify }}, venue: {{ pub.venue | jsonify }}, year: {{ pub.date | date: "%Y" | jsonify }} }{% unless forloop.last %},{% endunless %}{% endif %}
+        {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+  window.STUDY_INSTITUTIONS = {{ geo.institutions | jsonify }};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="{{ '/assets/js/study-map.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

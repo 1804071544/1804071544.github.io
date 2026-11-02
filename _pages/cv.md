@@ -1,8 +1,9 @@
 ---
-layout: archive
-title: "CV"
+layout: page-wide
+title: "Curriculum Vitae"
+eyebrow: "CV"
+subtitle: "Education, research projects, and skills."
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---

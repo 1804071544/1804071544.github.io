@@ -1,19 +1,16 @@
 ---
-layout: archive
+layout: page-wide
 title: "Publications"
+eyebrow: "Research output"
+subtitle: "Peer-reviewed journal articles in remote sensing, geospatial machine learning, and environmental monitoring."
 permalink: /publications/
-author_profile: true
 ---
 
-<div class="publication-intro">
-  <p class="publication-intro__eyebrow">Journal Articles</p>
-  <p class="publication-intro__summary">
-    <span><strong>{{ site.publications | size }}</strong> articles</span>
-    <span><strong>{{ site.publications | where: "first_author", true | size }}</strong> as first author</span>
-  </p>
+<div class="stat-strip">
+  <div><strong>{{ site.publications | size }}</strong><span>journal articles</span></div>
+  <div><strong>{{ site.publications | where: "first_author", true | size }}</strong><span>as first author</span></div>
   {% if site.author.googlescholar %}
-    <p>Grouped into first-author and co-authored work. The full, up-to-date list is on
-      <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Full list on Google Scholar &nearr;</a>
   {% endif %}
 </div>
 
